@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      .comment {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .comment:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .comment h3 {
+        color: #333;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .comment p {
+        color: #555;
+        line-height: 1.6;
+        font-size: 1.1em;
+      }
+
+      .comment p:last-child {
+        color: #888;
+        font-style: italic;
+        font-size: 0.9em;
+      }
+
+      body {
+        scroll-behavior: smooth;
+      }
+
+      .comment:hover h3 {
+        color: #1d72b8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Comments</h1>
+    <div class="container" id="comments-container"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
